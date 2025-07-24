@@ -1,0 +1,164 @@
+/* รีเซ็ตค่าเบื้องต้น */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Prompt', sans-serif;
+}
+
+/* พื้นหลังและตัวหนังสือ */
+body {
+  background: #f0f2f5;
+  color: #333;
+  padding: 20px;
+}
+
+/* คอนเทนเนอร์หลัก */
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* หัวเรื่อง */
+h1, h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+/* ฟอร์มเพิ่มเวลาเรียน */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+form input,
+form button {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+form button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #2980b9;
+}
+
+/* รายการวิชา */
+#taskList {
+  list-style: none;
+  margin-top: 10px;
+}
+
+#taskList li {
+  background: #ecf0f1;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ปฏิทิน */
+#calendar {
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* ปุ่มทั่วไป */
+button {
+  cursor: pointer;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  background-color: #3498db;
+  color: white;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* ปุ่มออกจากระบบ */
+#logoutBtn {
+  float: right;
+  background-color: #e74c3c;
+  margin-bottom: 10px;
+}
+
+#logoutBtn:hover {
+  background-color: #c0392b;
+}
+
+/* ฟอร์มเข้าสู่ระบบ / สมัครสมาชิก */
+.auth-container {
+  max-width: 400px;
+  margin: 50px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.auth-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.auth-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.auth-container input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.auth-container button {
+  background-color: #27ae60;
+}
+
+.auth-container button:hover {
+  background-color: #1e8449;
+}
+
+/* ลิงก์ */
+a {
+  color: #3498db;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  margin-top: 10px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* เสียงแจ้งเตือน */
+#audioStatus {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #888;
+}

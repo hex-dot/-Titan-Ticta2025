@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ปฏิทินเวลาเรียน</title>
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>ปฏิทินเวลาเรียน</h1>
+
+    <form id="taskForm">
+      <input type="text" id="subject" placeholder="ชื่อวิชา" required />
+      <input type="datetime-local" id="dateTime" required />
+      <button type="submit">เพิ่มเวลาเรียน</button>
+    </form>
+    <ul id="taskList"></ul>
+    <div id="calendar"></div>
+    <audio id="alertSound" src="ealry-sunrise-517.mp3" preload="auto"></audio>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
